@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            .summary_table {
+                max-width: 400px
+            }
+            .filtered_table {
+                max-width: 600px
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container-fluid">
+        <p>
+            We started with a list of all the officially registered charities in Scotland (from <a href="https://www.oscr.org.uk/about-charities/search-the-register/charity-register-download">OSCR</a>). That is 25274 organisations. Then filtered it to only those with a valid website and annual income over £30,000 and ignoring those who’s only stated purpose is religious and those outside Scotland.
+            This criteria is completely arbitrary.
+        </p>
+        <p>
+            Sites searched on <span id="searchDateDisplay">13-July-2021</span>
+        </p>
+        <h5>Summary</h5>
+        <select id="filterSummaryBy" class="runSummaryFilter">
+            <option value="">All Sites</option>
+            <option value="The advancement of education">where Purpose includes "The advancement of education"</option>
+            <option value="The advancement of environmental protection or improvement">where Purpose includes "The advancement of environmental protection or improvement"</option>
+            <option value="The prevention or relief of poverty">where Purpose includes "The prevention or relief of poverty"</option>
+            <option value="The advancement of citizenship or community development">where Purpose includes "The advancement of citizenship or community development"</option>
+        </select>
+        <table class="table table-sm summary_table">
+            <tr>
+                <th>Total Charity Websites searched</th>
+                <td id="countDisplay_total"></td>
+            </tr>
+            <tr>
+                <th>"Circular Economy" was used at least once</th>
+                <td id="countDisplay_termfound"></td>
+            </tr>
+            <tr>
+                <th>"Circular Economy" was not used</th>
+                <td id="countDisplay_termnotfound"></td>
+            </tr>
+        </table>
+        <hr />
+        <h5>Filter and/or group results</h5>
+        <select id="filterGroup" class="runFilter">
+            <option value="">All Sites</option>
+            <option value="charity_main_location">Sites by main charity location</option>
+            <option value="charity_constitutional_form">Sites by charity constitutional form</option>
+            <option value="charity_geographical_spread">Sites by charity geographical spread</option>
+        </select>
+        <select id="filterByCount" class="runFilter">
+            <option value="">All</option>
+            <option value="5">At least 5 mentions</option>
+            <option value="9">At least 9 mentions</option>
+        </select>
+        <select id="filterByPurpose" class="runFilter">
+            <option value=""></option>
+            <option value="The advancement of education">where Purpose includes "The advancement of education"</option>
+            <option value="The advancement of environmental protection or improvement">where Purpose includes "The advancement of environmental protection or improvement"</option>
+            <option value="The prevention or relief of poverty">where Purpose includes "The prevention or relief of poverty"</option>
+            <option value="The advancement of citizenship or community development">where Purpose includes "The advancement of citizenship or community development"</option>
+            
+            
+        </select>
+        <script id="rowTemplate_Group" type="text/template">
+            <tr><td>${group}</td><td>${count_found}</td><td>${count_notfound}</td><td>${total}</td></tr>
+        </script>
+        <script id="rowTemplate" type="text/template">
+            <tr><td>${searched_domain}</td><td>${results_count}</td></tr>
+        </script>
+        <table id="resultsTable" class="table table-sm filtered_table">
+            <thead>
+                <th data-sort="string" id="col1_head"></th>
+                <th data-sort="int" id="col2_head"></th>
+                <th data-sort="int" id="col3_head"></th>
+                <th data-sort="int" id="col4_head"></th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../_assets/iframeResizer.contentWindow.min.js"></script>
+    <script src="https:////ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.1/underscore-umd-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/json2html/2.1.0/json2html.min.js"></script>
+
+    <script>
+
+        let data = {};
+        
+        $(function(){
+            
+            $.getJSON( "serApi_results_summary.json", function( d ) {
+
+                data = d;
+                summaryDisplay(d);
+                defaultDisplay(d);
+                enableSort();
+                
+              });
+
+              $('.runFilter').change(function () {
+                filteredDisplay();
+            });
+            $('.runSummaryFilter').change(function () {
+                summaryDisplay(data);
+              });
+
+        });
+
+        function summaryDisplay(d) {
+            var filter = $('#filterSummaryBy').val();
+            if (filter) {
+                d = filter_bypurpose(d, filter);
+            }
+            $('#countDisplay_total').html(d.length)
+            termFoundCount = filter_found(d).length;
+            $('#countDisplay_termfound').html(termFoundCount)
+            $('#countDisplay_termnotfound').html(d.length-termFoundCount)
+        }
+
+        var tableSort;
+        function enableSort() {
+            
+        }
+
+        function clearTable() {
+            $('#resultsTable tbody').html("");
+        }
+        function showHead(g) {
+            heads = (g == "group") ?
+                {"col1": "Group", "col2": "Sites with", "col3": "Sites without", "col4": "Total"} :
+                {"col1": "Domain", "col2": "Search Count", "col3": "", "col4": ""};
+
+            $('#col1_head').text(heads.col1);
+            $('#col2_head').text(heads.col2);
+            $('#col3_head').text(heads.col3);
+            $('#col4_head').text(heads.col4);
+
+        }
+
+        function filter_bypurpose(d, purpose) {
+            return d.filter(function (x) {return x[purpose]==1});
+        }
+        function filter_found(d, mincount) {
+            if (mincount) {
+                return d.filter(function (x) { return x.search_term_found == 1 && x.results_count >= mincount});
+            }
+            return d.filter(function (x) { return x.search_term_found >= 1});
+        }
+        function filter_notfound(d) {
+            if (mincount) {
+                return d.filter(function (x) { return x.search_term_found == 0});
+            }
+            return d.filter(function (x) { return x.search_term_found == 0});
+        }
+
+        function defaultDisplay(d) {
+            d.sort( function( a, b ) { return b.results_count - a.results_count; } )
+
+            //clearTable();
+            showHead()
+            
+            let template = {'html':$('#rowTemplate').html()};
+            $('#resultsTable tbody').json2html(d,template);
+
+        }
+
+        function filteredDisplay() {
+
+            var groupByField = $('#filterGroup').val();
+            var filterByCount = $('#filterByCount').val();
+
+            results = data;
+            var filter2 = $('#filterByPurpose').val();
+            if (filter2) {
+                results = filter_bypurpose(results, filter2);
+            }
+
+            clearTable();
+            if (groupByField) {
+                groupedResults = [];
+                group = _.groupBy(results,groupByField);
+                _.each(group, function(v,k,l) {
+                    var f = filter_found(v, filterByCount).length;
+                    var c = v.length;
+                    groupedResults.push({
+                        "group": k,
+                        "count_found": f,
+                        "count_notfound": c-f,
+                        "total": c
+                    });
+                });
+                groupedResults.sort( function( a, b ) { return b.group - a.group; } )
+                
+                //render
+                showHead("group");
+                let rowTemplate = {'html':$('#rowTemplate_Group').html()};
+                $('#resultsTable tbody').json2html(groupedResults, rowTemplate);
+            } else {
+                defaultDisplay(filter_found(results, filterByCount));
+            }
+        }
+        
+    </script>
+    </body>
+</html>
