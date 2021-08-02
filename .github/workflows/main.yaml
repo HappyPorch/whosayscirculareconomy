@@ -1,0 +1,23 @@
+# Deploys web folder contents to Azure static site
+
+name: Deploy Static Site
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: actions/checkout@v2
+    - uses: tibor19/static-website-deploy@v1
+      with:
+        enabled-static-website: 'true'
+        folder: 'web/'
+        connection-string: ${{ secrets.AZURE_STATICSITE_CONNECTIONSTRING }}
