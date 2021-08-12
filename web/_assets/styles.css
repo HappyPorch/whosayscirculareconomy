@@ -1,0 +1,28 @@
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    margin: 2em;
+}
+h1 {
+    font-family: 'Varela Round', sans-serif;
+}
+iframe {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    min-height: 300px;
+    border: none;
+}
+nav {
+    margin: 2rem 0
+}
+footer {
+    margin-top: 4rem;
+    border-top: 1px solid rgba(204, 204, 204, 0.795);
+    color: #ccc
+}
+#homePanel h5 {
+    padding: 1rem 0 0 0 ;
+}
