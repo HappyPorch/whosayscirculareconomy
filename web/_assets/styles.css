@@ -2,7 +2,7 @@
 * {
     font-family: 'Open Sans', sans-serif;
 }
-body {
+.outerBody {
     margin: 2em;
 }
 h1 {
@@ -16,12 +16,16 @@ iframe {
     border: none;
 }
 nav {
-    margin: 2rem 0
+    margin: 2rem 0 1rem 0
 }
 footer {
+    font-size: 0.8em;
     margin-top: 4rem;
     border-top: 1px solid rgba(204, 204, 204, 0.795);
     color: #ccc
+}
+footer  a{
+    color:darkgray;
 }
 #homePanel h5 {
     padding: 1rem 0 0 0 ;
