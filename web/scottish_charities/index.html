@@ -31,7 +31,7 @@
                   <button class="nav-link" id="tablePanel-tab" data-bs-toggle="tab" data-bs-target="#tablePanel" type="button" role="tab" aria-controls="tablePanel" aria-selected="false">Analysis</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="chartPanel-tab" data-bs-toggle="tab" data-bs-target="#chartPanel" type="button" role="tab" aria-controls="chartPanel" aria-selected="false">Charts</a>
+                  <button class="nav-link" id="mapPanel-tab" data-bs-toggle="tab" data-bs-target="#mapPanel" type="button" role="tab" aria-controls="mapPanel" aria-selected="false">Map</a>
                 </li>
               </ul>
         </nav>
@@ -92,30 +92,44 @@
                     <option value="The prevention or relief of poverty">where Purpose includes "The prevention or relief of poverty"</option>
                     <option value="The advancement of citizenship or community development">where Purpose includes "The advancement of citizenship or community development"</option>
                     
-                    
                 </select>
-                <script id="rowTemplate_Group" type="text/template">
-                    <tr><td>${group}</td><td class="text-nowrap">${count_found}<td class="text-nowrap">${percent_found}%</td><td class="text-nowrap">${count_notfound}<td class="text-nowrap">${percent_found}%</td><td>${total}</td></tr>
-                </script>
-                <script id="rowTemplate" type="text/template">
-                    <tr><td>${searched_domain}</td><td>${results_count}</td></tr>
-                </script>
-                <table id="resultsTable" class="table table-sm filtered_table">
-                    <thead>
-                        <tr class="text-nowrap">
-                            <th data-sort="string" id="col1_head"></th>
-                            <th data-sort="int" id="col2_head" colspan="2"></th>
-                            <th data-sort="int" id="col3_head" colspan="2"></th>
-                            <th data-sort="int" id="col4_head"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
 
-                    </tbody>
-                </table>
+                <div class="row">
+                    <div class="col">
+                        <script id="rowTemplate_Group" type="text/template">
+                            <tr><td>${group}</td><td class="text-nowrap">${count_found}<td class="text-nowrap">${percent_found}%</td><td class="text-nowrap">${count_notfound}<td class="text-nowrap">${percent_notfound}%</td><td>${total}</td></tr>
+                        </script>
+                        <script id="rowTemplate" type="text/template">
+                            <tr><td>${searched_domain}</td><td>${results_count}</td></tr>
+                        </script>
+                        <table id="resultsTable" class="table table-sm filtered_table">
+                            <thead>
+                                <tr class="text-nowrap">
+                                    <th data-sort="string" id="col1_head"></th>
+                                    <th data-sort="int" id="col2_head" colspan="2"></th>
+                                    <th data-sort="int" id="col3_head" colspan="2"></th>
+                                    <th data-sort="int" id="col4_head"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <div id="pieChart"></div>
+                    </div>
+                  </div>
+
+                <div>
+                </div>
+
+                
 
             </div>
-            <div class="tab-pane fade" id="chartPanel" role="tabpanel" aria-labelledby="chartPanel-tab">...coming soon</div>
+            <div class="tab-pane fade" id="mapPanel" role="tabpanel" aria-labelledby="mapPanel-tab">
+                ...coming soon
+            </div>
         </div>
     </div>
 
@@ -124,134 +138,10 @@
     <script src="https:////ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.1/underscore-umd-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/json2html/2.1.0/json2html.min.js"></script>
-
-    <script>
-
-        let data = {};
-        
-        $(function(){
-            
-            $.getJSON( "serApi_results_summary.json", function( d ) {
-
-                data = d;
-                summaryDisplay(d);
-                defaultDisplay(d);
-                enableSort();
-                
-              });
-
-              $('.runFilter').change(function () {
-                filteredDisplay();
-            });
-            $('.runSummaryFilter').change(function () {
-                summaryDisplay(data);
-              });
-
-        });
-
-        function summaryDisplay(d) {
-            var filter = $('#filterSummaryBy').val();
-            if (filter) {
-                d = filter_bypurpose(d, filter);
-            }
-            $('#countDisplay_total').html(d.length)
-            termFoundCount = filter_found(d).length;
-            $('#countDisplay_termfound').html(termFoundCount)
-            $('#countDisplay_termfound_percent').html(asPercent(termFoundCount, d.length))
-            $('#countDisplay_termnotfound').html(d.length-termFoundCount)
-            $('#countDisplay_termnotfound_percent').html(asPercent(d.length-termFoundCount, d.length))
-        }
-        function asPercent(num, total){
-            return ((num/total)*100).toFixed(2);
-        }
-        var tableSort;
-        function enableSort() {
-            
-        }
-
-        //50 = 50/100 *100
-        //40 = 
-
-        function clearTable() {
-            $('#resultsTable tbody').html("");
-        }
-        function showHead(g) {
-            heads = (g == "group") ?
-                {"col1": "Group", "col2": "Sites with", "col3": "Sites without", "col4": "Total"} :
-                {"col1": "Domain", "col2": "Search Count", "col3": "", "col4": ""};
-
-            $('#col1_head').text(heads.col1);
-            $('#col2_head').text(heads.col2);
-            $('#col3_head').text(heads.col3);
-            $('#col4_head').text(heads.col4);
-
-        }
-
-        function filter_bypurpose(d, purpose) {
-            return d.filter(function (x) {return x[purpose]==1});
-        }
-        function filter_found(d, mincount) {
-            if (mincount) {
-                return d.filter(function (x) { return x.search_term_found == 1 && x.results_count >= mincount});
-            }
-            return d.filter(function (x) { return x.search_term_found >= 1});
-        }
-        function filter_notfound(d) {
-            if (mincount) {
-                return d.filter(function (x) { return x.search_term_found == 0});
-            }
-            return d.filter(function (x) { return x.search_term_found == 0});
-        }
-
-        function defaultDisplay(d) {
-            d.sort( function( a, b ) { return b.results_count - a.results_count; } )
-
-            //clearTable();
-            showHead()
-            
-            let template = {'html':$('#rowTemplate').html()};
-            $('#resultsTable tbody').json2html(d,template);
-
-        }
-
-        function filteredDisplay() {
-
-            var groupByField = $('#filterGroup').val();
-            var filterByCount = $('#filterByCount').val();
-
-            results = data;
-            var filter2 = $('#filterByPurpose').val();
-            if (filter2) {
-                results = filter_bypurpose(results, filter2);
-            }
-
-            clearTable();
-            if (groupByField) {
-                groupedResults = [];
-                group = _.groupBy(results,groupByField);
-                _.each(group, function(v,k,l) {
-                    var f = filter_found(v, filterByCount).length;
-                    var c = v.length;
-                    groupedResults.push({
-                        "group": k,
-                        "count_found": f,
-                        "percent_found": asPercent(f, c),
-                        "count_notfound": c-f,
-                        "percent_notfound": asPercent(c-f, c),
-                        "total": c
-                    });
-                });
-                groupedResults.sort( function( a, b ) { return b.group - a.group; } )
-                
-                //render
-                showHead("group");
-                let rowTemplate = {'html':$('#rowTemplate_Group').html()};
-                $('#resultsTable tbody').json2html(groupedResults, rowTemplate);
-            } else {
-                defaultDisplay(filter_found(results, filterByCount));
-            }
-        }
-        
-    </script>
+    <!-- Load c3 -->
+    <link href="../_assets/c3js/c3.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+    <script src="../_assets/c3js/c3.min.js"></script>
+    <script src="../_assets/scottish_charities.js"></script>
     </body>
 </html>
