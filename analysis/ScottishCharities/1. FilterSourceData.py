@@ -12,6 +12,7 @@ sourceFile = data.get_source(os.path.join(sourceDir, "CharityExport-05-Jul-2021.
 invalidLines_tempfile = os.path.join(sourceDir, "invalidLines.csv")
 filteredOut_tempfile = os.path.join(sourceDir, "filteredOut.csv")
 filteredIn_tempfile = os.path.join(sourceDir, "filteredIn.csv")
+outputData_tempfile = os.path.join(sourceDir, "cleanedData.csv")
 
 
 # open source csv and filter
@@ -19,6 +20,8 @@ count = 0
 filteredIn = []
 invalidLines = []
 filteredOut = []
+outputData = []
+outputDataFields = ["Charity Number","Website_domain","Charity Name","Registered Date","Known As","Charity Status","Postcode","Constitutional Form","Geographical Spread","Main Operating Location","Purposes","Beneficiaries","Activities","Objectives","Website","Most recent year income","Regulatory Type"]
 with open(sourceFile, mode='r') as csv_file:
     csv_reader = csv.DictReader(csv_file)
     line_count = 0
@@ -39,6 +42,10 @@ with open(sourceFile, mode='r') as csv_file:
                         domain = dom + '.' + suf
                     row["Website_domain"] = domain
                     filteredIn.append(row)
+                    outputRow = {}
+                    for outputField in outputDataFields:
+                        outputRow[outputField] = row[outputField]
+                    outputData.append(outputRow)
             else:
                 row["_invalid_reason"] = "Invalid or no website"
                 invalidLines.append(row)
@@ -52,6 +59,7 @@ with open(sourceFile, mode='r') as csv_file:
 data.save_temp_csv(invalidLines, invalidLines_tempfile)
 data.save_temp_csv(filteredOut, filteredOut_tempfile)
 data.save_temp_csv(filteredIn, filteredIn_tempfile)
+data.save_temp_csv(outputData, outputData_tempfile)
 
 print("Original = {}, filteredIn = {}, Invalid = {}, filteredOut = {}".format(line_count, len(filteredIn), len(invalidLines), len(filteredOut)))
 

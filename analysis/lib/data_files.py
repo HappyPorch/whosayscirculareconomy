@@ -4,8 +4,13 @@ source_data_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def get_source(file):
     return os.path.join(source_data_dir, 'data/source_data', file)
+
 def get_temp(file):
-    return os.path.join(source_data_dir, 'data/temp', file)
+    file = os.path.join(source_data_dir, 'data/temp', file)
+    folder = os.path.dirname(file)
+    if not os.path.exists(folder):
+        os.makedirs(folder)
+    return file
 
 def save_temp_csv(array_csv_rows, file_name):
     data_file = open(get_temp(file_name), 'w', newline='')
