@@ -2,8 +2,16 @@
 let rawData = {};
 
 $(function(){
-    
-    $.getJSON( "serApi_results_summary.json", function( d ) {
+    setUp();
+    $('#dataSet').change(function () {
+        setUp();
+    });
+});
+
+function setUp() {
+
+    var datafile = $("#dataSet").val()
+    $.getJSON( datafile, function( d ) {
 
         rawData = d;
         summaryDisplay(rawData);
@@ -17,9 +25,9 @@ $(function(){
     });
     $('.runSummaryFilter').change(function () {
         summaryDisplay(rawData);
-        });
+    });
 
-});
+}
 
 var chart;
 function showChart(d) {
@@ -76,7 +84,7 @@ function showHead(g) {
 }
 
 function filter_bypurpose(d, purpose) {
-    return d.filter(function (x) {return x[purpose]==1});
+    return d.filter(function (x) {return x.charity_purposes.includes(purpose)});
 }
 function filter_found(d, mincount) {
     if (mincount) {
