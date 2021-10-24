@@ -65,7 +65,7 @@ for filename in os.listdir(search_results_folder):
             "charity": {
                 "number": matched_charity.get("Charity Number",""),
                 "name": matched_charity.get("Charity Name",""),
-                "registered_fate": matched_charity.get("Registered Date",""),
+                "registered_date": matched_charity.get("Registered Date",""),
                 "known_as": matched_charity.get("Known As",""),
                 "postcode": matched_charity.get("Postcode",""),
                 "main_location": matched_charity.get("Main Operating Location",""),
