@@ -19,13 +19,16 @@ with open(sourceFile, mode='r') as csv_file:
     for row in csv_reader:
         line_count += 1
         if maxDomains > 0 and line_count <= maxDomains:
-            domains.append(row["Website_domain"])
+            d = []
+            d.append(row["Charity Number"])
+            d.append(row["Website_domain"])
+            domains.append(d)
 
 
 count = 0
 for d in domains:
-    outputFile = data.get_temp(os.path.join(sourceDir,"search_results", d + ".json"))
-    serpAPI.search(searchTerm, d, outputFile, project_secrets.serapi_key)
+    outputFile = data.get_temp(os.path.join(sourceDir,"search_results", d[1] + ".json"))
+    serpAPI.search(searchTerm, d[0], d[1], outputFile, project_secrets.serapi_key)
     count += 1
 
 print("Searches completed: {}".format(count))

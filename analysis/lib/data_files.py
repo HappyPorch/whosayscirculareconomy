@@ -1,4 +1,4 @@
-import sys, os, csv
+import sys, os, csv, json
 
 source_data_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -30,3 +30,8 @@ def save_temp_array(array_rows, file_name):
     with open(get_temp(file_name), "w") as txt_file:
         for row in array_rows:
             txt_file.write(row + "\n")
+
+
+def save_temp_json(obj, file_name):
+    with open(get_temp(file_name), "w", encoding='utf-8') as f:
+        json.dump(obj, f, indent=2)
