@@ -31,7 +31,7 @@ def filter_by_income(income):
     return 0
 
 def filter_by_domain(domain):
-    ignore = ["facebook.com", "bbc.co.uk", ".ac.uk", ".gov.uk", ".clacksweb.org.uk"] #".ed.ac.uk", ".abdn.ac.uk", ".napier.ac.uk", ".napierstudents.com", ".gsa.ac.uk", ".gcu.ac.uk", ".gla.ac.uk", ".strath.ac.uk", ".cityofglasgowcollege.ac.uk"]
+    ignore = ["facebook.com", "bbc.co.uk", ".ac.uk", ".gov.uk", ".clacksweb.org.uk", "sites.google.com"] #".ed.ac.uk", ".abdn.ac.uk", ".napier.ac.uk", ".napierstudents.com", ".gsa.ac.uk", ".gcu.ac.uk", ".gla.ac.uk", ".strath.ac.uk", ".cityofglasgowcollege.ac.uk"]
     for i in ignore:
         if i in domain:
             return 0

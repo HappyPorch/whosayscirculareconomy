@@ -3,11 +3,11 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import lib.data_files as data
 
 sourceDir = "ScottishCharities"
-charityData_file = os.path.join(sourceDir, "cleanedData.csv")
+charityData_file = os.path.join(sourceDir, "1. cleanedData.csv")
 search_results_folder = data.get_temp(os.path.join(sourceDir, "search_results"))
-outputFile = os.path.join(sourceDir, "collated_search_results.json")
-results_notfound_outputFile = os.path.join(sourceDir, "collated_results_notfound.csv")
-results_noexactmatch_outputFile = os.path.join(sourceDir, "collated_results_noexactmatch.csv")
+outputFile = os.path.join(sourceDir, "3. collated_search_results.json")
+results_notfound_outputFile = os.path.join(sourceDir, "3. collated_results_notfound.csv")
+results_noexactmatch_outputFile = os.path.join(sourceDir, "3. collated_results_noexactmatch.csv")
 
 domain_count = 0
 results_count = 0
@@ -27,6 +27,7 @@ for filename in os.listdir(search_results_folder):
         domain_count += 1
 
         domain = filename[: -len(".json")]
+        print("..checking: {}".format(domain))
 
          # read file
         with open(os.path.join(search_results_folder, filename), 'r') as myfile:
@@ -45,7 +46,8 @@ for filename in os.listdir(search_results_folder):
         #filter those with exact match results
         exactmatch_organic_results = []
         for o in search_result["organic_results"]:
-            if "missing" not in o and "circular economy" in o["snippet"].lower():
+            #todo: why is "snippet" missing for some results eg: deveron-projects.com
+            if "snippet" in o and "missing" not in o and "circular economy" in o["snippet"].lower():
                 exactmatch_organic_results.append(o)
         
         if len(exactmatch_organic_results) == 0:

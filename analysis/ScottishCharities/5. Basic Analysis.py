@@ -5,8 +5,8 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import lib.data_files as data
 
 sourceDir = "ScottishCharities"
-sourceFile = os.path.join(sourceDir, "collated_search_results_coords.json")
-outputFile = os.path.join(sourceDir, "Results_Found.json")
+sourceFile = os.path.join(sourceDir, "4. collated_search_results_coords.json")
+outputFile = os.path.join(sourceDir, "5. Results_Found.json")
 
 
 # read file

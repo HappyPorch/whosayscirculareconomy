@@ -3,9 +3,9 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import lib.data_files as data
 
 sourceDir = "ScottishCharities"
-sourceFile = os.path.join(sourceDir, "Results_Found.json")
-allSearchedSourceFile = os.path.join(sourceDir, "cleanedData.csv")
-outputFile = os.path.join(sourceDir, "ScottishCharities_results.json")
+sourceFile = os.path.join(sourceDir, "5. Results_Found.json")
+allSearchedSourceFile = os.path.join(sourceDir, "1. cleanedData.csv")
+outputFile = os.path.join(sourceDir, "6. ScottishCharities_results.json")
 
 
 
@@ -49,7 +49,30 @@ for result in sourceJson:
     }
     results.append(row)
 
-#todo: append charities with no search term found
+allCharityNums = set(x["Charity Number"] for x in allSearchedSource)
+searchFoundCharityNums = set(x["charity_number"] for x in results)
+searchNotFoundCharityNums = allCharityNums.difference(searchFoundCharityNums)
+unmatched_charities = list(x for x in allSearchedSource if x["Charity Number"] in searchNotFoundCharityNums)
+for c in unmatched_charities:
+    purposes = c.get("Purposes","").strip("'").split("','")
+    row = {
+        "charity_number": c.get("Charity Number",""),
+        "charity_name": c.get("Charity Name",""),
+        "charity_registered_fate": c.get("Registered Date",""),
+        "charity_known_as": c.get("Known As",""),
+        "charity_postcode": c.get("Postcode",""),
+        "charity_main_location": c.get("Main Operating Location",""),
+        "charity_status": c.get("Charity Status",""),
+        "charity_constitutional_form": c.get("Constitutional Form",""),
+        "charity_geographical_spread": c.get("Geographical Spread",""),
+        "charity_main_operating_location": c.get("Main Operating Location",""),
+        "charity_purposes": purposes,
+        "charity_beneficiaries": c.get("Beneficiaries",""),
+        "charity_activities": c.get("Activities",""),
+        "charity_objectives": c.get("Objectives",""),
+        "search_term_found": 0
+    }
+    results.append(row)
 
 #todo: change JS filter_bypurpose to use purposes array 
 

@@ -4,8 +4,8 @@ import lib.data_files as data
 import lib.postcode as postcode
 
 sourceDir = "ScottishCharities"
-sourceFile = os.path.join(sourceDir, "collated_search_results.json")
-outputFile = os.path.join(sourceDir, "collated_search_results_coords.json")
+sourceFile = os.path.join(sourceDir, "3. collated_search_results.json")
+outputFile = os.path.join(sourceDir, "4. collated_search_results_coords.json")
 
 
 # read file

@@ -7,18 +7,18 @@ import project_secrets, lib.serpAPI as serpAPI
 searchTerm = "circular economy"
 
 sourceDir = "ScottishCharities"
-sourceFile = data.get_temp(os.path.join(sourceDir, "cleanedData.csv"))
+sourceFile = data.get_temp(os.path.join(sourceDir, "1. cleanedData.csv"))
 
 
 domains = []
-maxDomains = 100 # -1 will seach all domains in source file
+maxDomains = -1 # -1 will seach all domains in source file
 
 with open(sourceFile, mode='r') as csv_file:
     csv_reader = csv.DictReader(csv_file)
     line_count = 0
     for row in csv_reader:
         line_count += 1
-        if maxDomains > 0 and line_count <= maxDomains:
+        if maxDomains < 0 or line_count <= maxDomains:
             d = []
             d.append(row["Charity Number"])
             d.append(row["Website_domain"])
