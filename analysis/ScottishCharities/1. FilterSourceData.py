@@ -3,6 +3,7 @@ import csv
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import lib.data_files as data
 import helpers
+import lib.helpers as lib_helpers
 import tldextract
 from datetime import datetime
 
@@ -33,8 +34,8 @@ with open(sourceFile, mode='r') as csv_file:
         if line_count == 0:
             count = 0
         elif helpers.filter_by_location(row["Main Operating Location"]) and helpers.filter_by_purposes(row["Purposes"]) and helpers.filter_by_activities(row["Activities"]) and helpers.filter_by_income(row["Most recent year income"]) and helpers.filter_by_name(row["Charity Name"]):
-            domain =helpers.getdomain(row["Website"])
-            if domain and helpers.filter_by_domain(domain): 
+            domain =lib_helpers.getdomain(row["Website"])
+            if domain and lib_helpers.filter_by_domain(domain): 
                 website = row["Website"]
                 sub,dom,suf = tldextract.extract(website)
                 if (not suf):

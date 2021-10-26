@@ -3,10 +3,10 @@ import sys, os, csv, json
 source_data_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def get_source(file):
-    return os.path.join(source_data_dir, 'data/source_data', file)
+    return os.path.join(source_data_dir, '_data/source_data', file)
 
 def get_temp(file):
-    file = os.path.join(source_data_dir, 'data/temp', file)
+    file = os.path.join(source_data_dir, '_data/temp', file)
     folder = os.path.dirname(file)
     if not os.path.exists(folder):
         os.makedirs(folder)
