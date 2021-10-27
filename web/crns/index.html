@@ -23,13 +23,10 @@
     <body>
     <div class="container-fluid">
         <p>
-            We started with a list of all the officially registered charities in Scotland (from <a href="https://www.oscr.org.uk/about-charities/search-the-register/charity-register-download">OSCR</a>). Then filtered it to only those with a valid website and annual income over £30,000 and ignoring those who’s only stated purpose is religious and those outside Scotland.
-            This criteria is completely arbitrary. Then removing those without or with invlaid websites, and excluding any listing Facebook, Google or other common domains as their website.
+            <a href="https://www.crns.org.uk/about-us/who-we-are/" target="_blank">CRNS</a> is a membership organisation committed to delivering a circular economy in Scotland.
+            For this search we started with all the organisations listed on the excellent <a href="https://www.crns.org.uk/map1/" target="_blank">CRNS Map</a>. 
+            Then excluding any listing Facebook, Google or other common domains as their website.
         </p>
-        <select id="dataSet" class="form-select" >
-            <option value="CE_Search_ScottishCharities_results_20210124.json">Data from searches performed around 24th Oct, 2021</option>
-            <option value="CE_Search_ScottishCharities_results_20210802.json">Data from searches performed around 02nd Aug, 2021</option>
-        </select>
         <hr />
         <nav>
             <ul class="nav nav-tabs" id="dataNav" role="tablist">
@@ -45,7 +42,7 @@
             <div class="tab-pane fade show active" id="summaryPanel" role="tabpanel" aria-labelledby="summaryPanel-tab">
                 <p class="small">
                     Sites searched on <span id="searchDateDisplay"></span><br />
-                    Original data contained <span id="originalCountDisplay"></span> charities (before selecting which to search)
+                    Original data contained <span id="originalCountDisplay"></span> organisations (before selecting which to search)
                 </p>
                 <h5>Summary</h5>
                 <select id="filterSummaryBy" class="runSummaryFilter form-select" >
@@ -57,7 +54,7 @@
                 </select>
                 <table class="table table-sm summary_table">
                     <tr>
-                        <th>Total Charity Websites searched</th>
+                        <th>Total Websites searched</th>
                         <td id="countDisplay_total" colspan="2"></td>
                     </tr>
                     <tr>
@@ -74,64 +71,10 @@
                 
             </div>
             <div class="tab-pane fade" id="tablePanel" role="tabpanel" aria-labelledby="tablePanel-tab">
-                
-
-                <h5>Filter and/or group results</h5>
-                <select id="filterGroup" class="runFilter form-select">
-                    <option value="">All Sites</option>
-                    <option value="charity_main_location">Sites by main charity location</option>
-                    <option value="charity_constitutional_form">Sites by charity constitutional form</option>
-                    <option value="charity_geographical_spread">Sites by charity geographical spread</option>
-                </select>
-                <select id="filterByCount" class="runFilter form-select my-1">
-                    <option value="">All</option>
-                    <option value="5">At least 5 mentions</option>
-                    <option value="9">At least 9 mentions</option>
-                </select>
-                <select id="filterByPurpose" class="runFilter form-select">
-                    <option value=""></option>
-                    <option value="The advancement of education">where Purpose includes "The advancement of education"</option>
-                    <option value="The advancement of environmental protection or improvement">where Purpose includes "The advancement of environmental protection or improvement"</option>
-                    <option value="The prevention or relief of poverty">where Purpose includes "The prevention or relief of poverty"</option>
-                    <option value="The advancement of citizenship or community development">where Purpose includes "The advancement of citizenship or community development"</option>
-                    
-                </select>
-
-                <div class="row">
-                    <div class="col">
-                        <script id="rowTemplate_Group" type="text/template">
-                            <tr><td>${group}</td><td class="text-nowrap">${count_found}<td class="text-nowrap">${percent_found}%</td><td class="text-nowrap">${count_notfound}<td class="text-nowrap">${percent_notfound}%</td><td>${total}</td></tr>
-                        </script>
-                        <script id="rowTemplate" type="text/template">
-                            <tr><td>${searched_domain}</td><td>${results_count}</td></tr>
-                        </script>
-                        <table id="resultsTable" class="table table-sm filtered_table">
-                            <thead>
-                                <tr class="text-nowrap">
-                                    <th data-sort="string" id="col1_head"></th>
-                                    <th data-sort="int" id="col2_head" colspan="2"></th>
-                                    <th data-sort="int" id="col3_head" colspan="2"></th>
-                                    <th data-sort="int" id="col4_head"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col">
-                        <div id="pieChart"></div>
-                    </div>
-                  </div>
-
-                <div>
-                </div>
-
-                
-
-            </div>
-        </div>
+            </div> 
+        </div> 
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https:////ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -142,6 +85,6 @@
     <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
     <script src="../_assets/c3js/c3.min.js"></script>
     <script src="../_assets/helpers.js"></script>
-    <script src="scottish_charities.js"></script>
-    </body>
+    <script src="crns.js"></script>
+</body>
 </html>

@@ -64,9 +64,6 @@ function summaryDisplay(rawData) {
     $('#countDisplay_termnotfound').html(d.length-termFoundCount)
     $('#countDisplay_termnotfound_percent').html(asPercent(d.length-termFoundCount, d.length))
 }
-function asPercent(num, total){
-    return ((num/total)*100).toFixed(2);
-}
 var tableSort;
 function enableSort() {
     
