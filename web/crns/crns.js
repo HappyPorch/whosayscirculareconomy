@@ -94,14 +94,14 @@ function filteredDisplay() {
         showHead("group");
         let rowTemplate = {'html':$('#rowTemplate_Group').html()};
         $('#resultsTable tbody').json2html(groupedResults, rowTemplate);
-        //showChart(groupedResults);
+        showChart(groupedResults);
     } else {
         ungroupedDisplay(filter_found(results, filterByCount));
     }
 }
 function ungroupedDisplay(d) {
 
-    //hideChart();
+    hideChart();
 
     d.sort( function( a, b ) { return b.summary.results_count - a.summary.results_count; } )
 
@@ -149,4 +149,24 @@ function filter_notfound(d) {
 function getCategories(d) {
  var cats = d.data.map(item => item.age)
         filter((value, index, self) => self.indexOf(value) === index)
+}
+
+
+var chart;
+function showChart(d) {
+    cols = d.filter(x => x.count_found > 0).map(function (x) { return [x.group, x.count_found]})
+    chart = c3.generate({
+        bindto: '#pieChart',
+        data: {
+            columns: cols,
+            type : 'pie',
+            onclick: function (d, i) { console.log("onclick", d, i); },
+            onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+            onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+        }
+    });
+}
+function hideChart() {
+    if (chart)
+        chart = chart.destroy();
 }
