@@ -15,7 +15,7 @@ function setUp() {
 
         rawData = d;
         summaryDisplay(rawData);
-        ungroupedDisplay(d);
+        ungroupedDisplay(d.data);
         enableSort();
         
         });
@@ -48,7 +48,11 @@ function hideChart() {
         chart.destroy();
 }
 
-function summaryDisplay(d) {
+function summaryDisplay(rawData) {
+    $('#searchDateDisplay').html(rawData.meta.search_date)
+    $('#originalCountDisplay').html(rawData.meta.source_count)
+    
+    var d = rawData.data;
     var filter = $('#filterSummaryBy').val();
     if (filter) {
         d = filter_bypurpose(d, filter);
@@ -118,7 +122,7 @@ function filteredDisplay() {
     var groupByField = $('#filterGroup').val();
     var filterByCount = $('#filterByCount').val();
 
-    results = rawData;
+    results = rawData.data;
     var filter2 = $('#filterByPurpose').val();
     if (filter2) {
         results = filter_bypurpose(results, filter2);
