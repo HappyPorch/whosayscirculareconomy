@@ -45,7 +45,7 @@ function showChart(d) {
 }
 function hideChart() {
     if (chart)
-        chart.destroy();
+        chart = chart.destroy();
 }
 
 function summaryDisplay(rawData) {
