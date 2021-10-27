@@ -47,6 +47,11 @@
             "email": "arran.ecosavvy@gmail.com",
             "logo": "ArranEcoSavvy.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -5.096423,
+            "latitude": 55.490354,
+            "admin_district": "North Ayrshire"
           }
         },
         "categories": [
@@ -273,6 +278,11 @@
             "email": "hello@edinburghtoollibrary.org.uk",
             "logo": "EdinburghToolLibrary.jpg",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.179677,
+            "latitude": 55.963961,
+            "admin_district": "City of Edinburgh"
           }
         },
         "categories": [
@@ -394,6 +404,11 @@
             "email": "info@glasgowwoodrecycling.org.uk",
             "logo": "GlasgowWoodRecycling.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.344284,
+            "latitude": 55.873727,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -491,6 +506,11 @@
             "email": "info@moveon.org.uk",
             "logo": "MoveOnWood.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.230985,
+            "latitude": 55.981034,
+            "admin_district": "City of Edinburgh"
           }
         },
         "categories": [
@@ -740,6 +760,11 @@
             "email": "connect@re-setscenery.scot",
             "logo": "Resetscenery.jpg",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.250187,
+            "latitude": 55.871156,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -808,7 +833,8 @@
             "email": "info@apositivestart.org.uk",
             "logo": "apositivestart.png",
             "listorder": 0
-          }
+          },
+          "postal_code_info": null
         },
         "categories": [
           "community engagement",
@@ -878,6 +904,11 @@
             "email": "enquiries@cothrom.net",
             "logo": "Cothrom.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -7.392731,
+            "latitude": 57.258318,
+            "admin_district": "Na h-Eileanan Siar"
           }
         },
         "categories": [
@@ -1027,6 +1058,11 @@
             "email": "office@taysidereusers.co.uk",
             "logo": "TaysideReusers.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.98499,
+            "latitude": 56.462979,
+            "admin_district": "Dundee City"
           }
         },
         "categories": [
@@ -1104,6 +1140,11 @@
             "email": "info@remakescotland.co.uk",
             "logo": "REMAKE.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.852202,
+            "latitude": 56.363361,
+            "admin_district": "Perth and Kinross"
           }
         },
         "categories": [
@@ -1321,6 +1362,11 @@
             "email": "info@wheatley-group.com",
             "logo": "WheatleyGroup.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.24841,
+            "latitude": 55.860373,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -1443,6 +1489,11 @@
             "email": "info@total-homes.com",
             "logo": "TotalHomes.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.213319,
+            "latitude": 55.853658,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -1559,6 +1610,11 @@
             "email": "info@forthenvironmentlink.org",
             "logo": "ForthEnvironmentLink.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.938952,
+            "latitude": 56.116348,
+            "admin_district": "Stirling"
           }
         },
         "categories": [
@@ -1748,6 +1804,11 @@
             "email": "info@southseeds.org",
             "logo": "SouthSeeds.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.266061,
+            "latitude": 55.834165,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -1817,6 +1878,11 @@
             "email": "board@myleapproject.org",
             "logo": "LEAP.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.579984,
+            "latitude": 55.857442,
+            "admin_district": "Renfrewshire"
           }
         },
         "categories": [
@@ -1980,6 +2046,11 @@
             "email": "walkerburn@homebasics.org.uk",
             "logo": "HomeBasicsWalkerburn.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.016623,
+            "latitude": 55.622792,
+            "admin_district": "Scottish Borders"
           }
         },
         "categories": [
@@ -2052,6 +2123,11 @@
             "email": "info@greenerkirkcaldy.org.uk",
             "logo": "GreenerKirkcaldy.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.164089,
+            "latitude": 56.110045,
+            "admin_district": "Fife"
           }
         },
         "categories": [
@@ -2313,6 +2389,11 @@
             "email": "info@thebikestation.org.uk",
             "logo": "EdinburghBikeStation.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.179414,
+            "latitude": 55.934829,
+            "admin_district": "City of Edinburgh"
           }
         },
         "categories": [
@@ -2401,6 +2482,11 @@
             "email": "glasgowwest@bikeforgood.org.uk",
             "logo": "BikeforGood.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.29168,
+            "latitude": 55.864895,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -2471,6 +2557,11 @@
             "email": "info@xsresources.org",
             "logo": "XSresources.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.213643,
+            "latitude": 56.962234,
+            "admin_district": "Aberdeenshire"
           }
         },
         "categories": [
@@ -2539,6 +2630,11 @@
             "email": "swapandreusehub@gmail.com",
             "logo": "SHRUB.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.188229,
+            "latitude": 55.948267,
+            "admin_district": "City of Edinburgh"
           }
         },
         "categories": [
@@ -2787,6 +2883,11 @@
             "email": "heretohelp@bhf.org.uk",
             "logo": "BritishHeartFoundation.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -1.088304,
+            "latitude": 50.799741,
+            "admin_district": "Portsmouth"
           }
         },
         "categories": [
@@ -2892,6 +2993,11 @@
             "email": "clachworks@gmail.com",
             "logo": "Clachworks.jpg",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.221215,
+            "latitude": 57.477768,
+            "admin_district": "Highland"
           }
         },
         "categories": [
@@ -3012,6 +3118,11 @@
             "email": "info@seathechange.org.uk",
             "logo": "seathechange.jpg",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.157563,
+            "latitude": 55.88838,
+            "admin_district": "Scottish Borders"
           }
         },
         "categories": [
@@ -3080,6 +3191,11 @@
             "email": "office@gorebridge.org.uk",
             "logo": "GorebridgeCDT.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.048047,
+            "latitude": 55.8414,
+            "admin_district": "Midlothian"
           }
         },
         "categories": [
@@ -3149,6 +3265,11 @@
             "email": "ragstoriches@govanhillbaths.com",
             "logo": "GovanhillBathsCDT.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.262063,
+            "latitude": 55.837344,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -3424,6 +3545,11 @@
             "email": "orkneyzerowasteyard@gmail.com",
             "logo": "OrkneyZeroWaste.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.210096,
+            "latitude": 58.932649,
+            "admin_district": "Orkney Islands"
           }
         },
         "categories": [
@@ -3497,6 +3623,11 @@
             "email": "repair@remade.network",
             "logo": "RepairStop.jpg",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.270701,
+            "latitude": 55.837032,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -4017,6 +4148,11 @@
             "email": "info@grampianhousing.co.uk",
             "logo": "GrampianHousingAssociation.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.109946,
+            "latitude": 57.146182,
+            "admin_district": "Aberdeen City"
           }
         },
         "categories": [
@@ -4211,6 +4347,11 @@
             "email": "contact@transitionlinlithgow.org.uk",
             "logo": "LCDT.png",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.612453,
+            "latitude": 55.97371,
+            "admin_district": "West Lothian"
           }
         },
         "categories": [
@@ -4358,6 +4499,11 @@
             "email": "hello@societyzero.co.uk",
             "logo": "SocietyZero.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.226474,
+            "latitude": 55.898936,
+            "admin_district": "East Dunbartonshire"
           }
         },
         "categories": [
@@ -4579,6 +4725,11 @@
             "email": "ilm@ilmhighland.co.uk",
             "logo": "ILM.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.269954,
+            "latitude": 57.691731,
+            "admin_district": "Highland"
           }
         },
         "categories": [
@@ -4696,6 +4847,11 @@
             "email": "ask@changeworks.org.uk",
             "logo": "Changeworks.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.185338,
+            "latitude": 55.969986,
+            "admin_district": "City of Edinburgh"
           }
         },
         "categories": [
@@ -4933,6 +5089,11 @@
             "email": "info@lochaberenviro.org.uk",
             "logo": "LochaberEnvironmentGroup.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -5.089382,
+            "latitude": 56.822126,
+            "admin_district": "Highland"
           }
         },
         "categories": [
@@ -5001,6 +5162,11 @@
             "email": "greenerkemnaytrustees@gmail.com",
             "logo": "Greenerkemnay.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.445297,
+            "latitude": 57.234276,
+            "admin_district": "Aberdeenshire"
           }
         },
         "categories": [
@@ -5094,6 +5260,11 @@
             "email": "cfrcenquiries@chaltd.org",
             "logo": "CunninghameFurniture.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.671604,
+            "latitude": 55.605736,
+            "admin_district": "North Ayrshire"
           }
         },
         "categories": [
@@ -5167,6 +5338,11 @@
             "email": "joan.darcy@plasticatbay.org",
             "logo": "plastic@bay.png",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.750419,
+            "latitude": 58.568202,
+            "admin_district": "Highland"
           }
         },
         "categories": [
@@ -5439,6 +5615,11 @@
             "email": "info@sprucecarpets.org.uk",
             "logo": "SpruceCarpets.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.311643,
+            "latitude": 55.855187,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -5586,6 +5767,11 @@
             "email": "info@woodrecyclability.co.uk",
             "logo": "WoodRecyclability.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.165523,
+            "latitude": 57.333659,
+            "admin_district": "Aberdeenshire"
           }
         },
         "categories": [
@@ -5734,6 +5920,11 @@
             "email": "opfv@csrec.org.uk",
             "logo": "oneplanetforthvalley.png",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.786346,
+            "latitude": 55.998617,
+            "admin_district": "Falkirk"
           }
         },
         "categories": [
@@ -5983,7 +6174,8 @@
             "email": "oneplanetsutherland@gmail.com",
             "logo": "PlanetSutherland.jpg",
             "listorder": 0
-          }
+          },
+          "postal_code_info": null
         },
         "categories": [
           "community engagement"
@@ -6075,6 +6267,11 @@
             "email": "shop@merrygoroundglasgow.co.uk",
             "logo": "MerryGoRoundLogo.jpg",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.27143,
+            "latitude": 55.818895,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -6170,6 +6367,11 @@
             "email": "info@tzcb.org.uk",
             "logo": "Fynefutures.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -5.05659,
+            "latitude": 55.837852,
+            "admin_district": "Argyll and Bute"
           }
         },
         "categories": [
@@ -6241,6 +6443,11 @@
             "email": "info@transitionstirling.org.uk",
             "logo": "TransitionStirling.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.937359,
+            "latitude": 56.118712,
+            "admin_district": "Stirling"
           }
         },
         "categories": [
@@ -6406,6 +6613,11 @@
             "email": "wasabednowabag@gmail.com",
             "logo": "wasabed.jpg",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -5.803938,
+            "latitude": 57.814653,
+            "admin_district": "Highland"
           }
         },
         "categories": [
@@ -6676,6 +6888,11 @@
             "email": "hello@edinburghremakery.org.uk",
             "logo": "TheEdinburghRemakery.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.173163,
+            "latitude": 55.968458,
+            "admin_district": "City of Edinburgh"
           }
         },
         "categories": [
@@ -6876,6 +7093,11 @@
             "email": "info@ullapoolcommunity.onmicrosoft.com",
             "logo": "ullapoolcommunitytrust.png",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -5.158099,
+            "latitude": 57.896516,
+            "admin_district": "Highland"
           }
         },
         "categories": [
@@ -6994,6 +7216,11 @@
             "email": "info@reconnectglasgow.co.uk",
             "logo": "ReconnectGlasgow.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.213319,
+            "latitude": 55.853658,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -7070,6 +7297,11 @@
             "email": "info@grab.org.uk",
             "logo": "TheGRABTrust.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -5.421577,
+            "latitude": 56.026048,
+            "admin_district": "Argyll and Bute"
           }
         },
         "categories": [
@@ -7142,6 +7374,11 @@
             "email": "nre@greenhive.co.uk",
             "logo": "NairnRiverEnterprises.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.867599,
+            "latitude": 57.587704,
+            "admin_district": "Highland"
           }
         },
         "categories": [
@@ -7261,6 +7498,11 @@
             "email": "alison@aberdeenclimateaction.org",
             "logo": "aberdeenclimateaction.png",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.187768,
+            "latitude": 57.117227,
+            "admin_district": "Aberdeen City"
           }
         },
         "categories": [
@@ -7354,6 +7596,11 @@
             "email": "bb@orchardhill.org.uk",
             "logo": "86thGlasgowBoysBrigade.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.292801,
+            "latitude": 55.800361,
+            "admin_district": "East Renfrewshire"
           }
         },
         "categories": [
@@ -7389,6 +7636,11 @@
             "email": "enterprise@accessibletennis.co.uk",
             "logo": "AccessibleTennis.jpg",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.295074,
+            "latitude": 55.875554,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -7424,6 +7676,11 @@
             "email": "acharaclecommunitycompany@gmail.com",
             "logo": "AcharacleCommunityCompany.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -5.793302,
+            "latitude": 56.740842,
+            "admin_district": "Highland"
           }
         },
         "categories": [
@@ -7462,6 +7719,11 @@
             "email": "office@alloacommunityenterprises.org.uk",
             "logo": "AlloaCommunityEnterprises.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.781549,
+            "latitude": 56.122368,
+            "admin_district": "Clackmannanshire"
           }
         },
         "categories": [
@@ -7503,6 +7765,11 @@
             "email": "info@anguscyclehub.co.uk",
             "logo": "AngusCycleHub.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.582347,
+            "latitude": 56.558831,
+            "admin_district": "Angus"
           }
         },
         "categories": [
@@ -7538,6 +7805,11 @@
             "email": "info@babesinthewood.org",
             "logo": "BabesInTheWood.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.928624,
+            "latitude": 56.116458,
+            "admin_district": "Stirling"
           }
         },
         "categories": [
@@ -7575,6 +7847,11 @@
             "email": "info@barra-vatersay.org.uk",
             "logo": "BarraVatersayEWM.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -7.487706,
+            "latitude": 56.955611,
+            "admin_district": "Na h-Eileanan Siar"
           }
         },
         "categories": [
@@ -7611,6 +7888,11 @@
             "email": "info@belhelviecommunitytrust.org.uk",
             "logo": "Belhelvie.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.059861,
+            "latitude": 57.251361,
+            "admin_district": "Aberdeenshire"
           }
         },
         "categories": [
@@ -7645,6 +7927,11 @@
             "email": "info@bethanychristiantrust.com",
             "logo": "Bethany_.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.175812,
+            "latitude": 55.971793,
+            "admin_district": "City of Edinburgh"
           }
         },
         "categories": [
@@ -7687,6 +7974,11 @@
             "email": "info@blythswood.org",
             "logo": "BlythswoodCare.jpg",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.304279,
+            "latitude": 57.675799,
+            "admin_district": "Highland"
           }
         },
         "categories": [
@@ -7730,6 +8022,11 @@
             "email": "info@carthannasnis.co.uk",
             "logo": "CarthannasNis.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -6.407346,
+            "latitude": 58.248667,
+            "admin_district": "Na h-Eileanan Siar"
           }
         },
         "categories": [
@@ -7767,7 +8064,8 @@
             "email": "enquiries@castlefurniture.org",
             "logo": "CastleFurniture.JPG",
             "listorder": 0
-          }
+          },
+          "postal_code_info": null
         },
         "categories": [
           "community engagement",
@@ -7810,6 +8108,11 @@
             "email": "info@cfine.org",
             "logo": "CFINE.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.092963,
+            "latitude": 57.141785,
+            "admin_district": "Aberdeen City"
           }
         },
         "categories": [
@@ -7846,6 +8149,11 @@
             "email": "info@recycoll.org.uk",
             "logo": "CollRecycling.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -6.527557,
+            "latitude": 56.623393,
+            "admin_district": "Argyll and Bute"
           }
         },
         "categories": [
@@ -7883,6 +8191,11 @@
             "email": "home@cope.ltd.uk",
             "logo": "COPEShetland.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -1.167031,
+            "latitude": 60.165928,
+            "admin_district": "Shetland Islands"
           }
         },
         "categories": [
@@ -7924,7 +8237,8 @@
             "email": "starterpacks_dundee@btconnect.com",
             "logo": "DundeeStarterPacks.JPG",
             "listorder": 0
-          }
+          },
+          "postal_code_info": null
         },
         "categories": [
           "community engagement",
@@ -7961,6 +8275,11 @@
             "email": "enquiries@earthtime.co.uk",
             "logo": "EarthtimeForAll.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.312658,
+            "latitude": 57.650559,
+            "admin_district": "Moray"
           }
         },
         "categories": [
@@ -7995,6 +8314,11 @@
             "email": "info@emmausglasgow.org.uk",
             "logo": "EmmausGlasgow.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.261288,
+            "latitude": 55.877891,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -8035,6 +8359,11 @@
             "email": "fhpfalkirk2@aol.com",
             "logo": "FalkirkHomelessProject.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.756399,
+            "latitude": 55.999339,
+            "admin_district": "Falkirk"
           }
         },
         "categories": [
@@ -8073,7 +8402,8 @@
             "email": "info@centreforstewardship.org.uk",
             "logo": "FalklandCentre.JPG",
             "listorder": 0
-          }
+          },
+          "postal_code_info": null
         },
         "categories": [
           "community engagement"
@@ -8107,6 +8437,11 @@
             "email": "info@forwardcouparangus.org.uk",
             "logo": "ForwardCouparAngus.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.267105,
+            "latitude": 56.545442,
+            "admin_district": "Perth and Kinross"
           }
         },
         "categories": [
@@ -8142,6 +8477,11 @@
             "email": "donations@foursquare.org.uk",
             "logo": "FourSquare.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.196973,
+            "latitude": 55.965879,
+            "admin_district": "City of Edinburgh"
           }
         },
         "categories": [
@@ -8182,6 +8522,11 @@
             "email": "admin@freshstartweb.org.uk",
             "logo": "Freshstart.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.24202,
+            "latitude": 55.970829,
+            "admin_district": "City of Edinburgh"
           }
         },
         "categories": [
@@ -8219,6 +8564,11 @@
             "email": "enquiries@furnitureplus.org.uk",
             "logo": "FurniturePlus.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.122815,
+            "latitude": 56.129529,
+            "admin_district": "Fife"
           }
         },
         "categories": [
@@ -8262,6 +8612,11 @@
             "email": "frpa@btconnect.com",
             "logo": "FurnitureRecyclingProjectAngus.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.58711,
+            "latitude": 56.564557,
+            "admin_district": "Angus"
           }
         },
         "categories": [
@@ -8301,6 +8656,11 @@
             "email": "enquiries@gordonrural.org.uk",
             "logo": "GordonRuralAction.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.787762,
+            "latitude": 57.4464,
+            "admin_district": "Aberdeenshire"
           }
         },
         "categories": [
@@ -8337,6 +8697,11 @@
             "email": "community@grantonhub.org",
             "logo": "GrantonHub.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.231203,
+            "latitude": 55.980346,
+            "admin_district": "City of Edinburgh"
           }
         },
         "categories": [
@@ -8371,6 +8736,11 @@
             "email": "enquiries@healthynhappy.org.uk",
             "logo": "HealthyandHappyCDT.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.221827,
+            "latitude": 55.826093,
+            "admin_district": "South Lanarkshire"
           }
         },
         "categories": [
@@ -8406,6 +8776,11 @@
             "email": "info@hebridesalpha.co.uk",
             "logo": "HebridesAlpha.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -6.37851,
+            "latitude": 58.20661,
+            "admin_district": "Na h-Eileanan Siar"
           }
         },
         "categories": [
@@ -8443,6 +8818,11 @@
             "email": "enquiries@homefromhome.plus.com",
             "logo": "HomeFromHome.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.56935,
+            "latitude": 55.948032,
+            "admin_district": "West Dunbartonshire"
           }
         },
         "categories": [
@@ -8482,6 +8862,11 @@
             "email": "home_aid@btconnect.com",
             "logo": "HomeAidWestLothian.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.638867,
+            "latitude": 55.903692,
+            "admin_district": "West Lothian"
           }
         },
         "categories": [
@@ -8521,6 +8906,11 @@
             "email": "reception@instantneighbour.co.uk",
             "logo": "Instantneighbour.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.113826,
+            "latitude": 57.166704,
+            "admin_district": "Aberdeen City"
           }
         },
         "categories": [
@@ -8560,6 +8950,11 @@
             "email": "info@justcycle.org.uk",
             "logo": "JustCycle.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.765893,
+            "latitude": 55.607201,
+            "admin_district": "Scottish Borders"
           }
         },
         "categories": [
@@ -8595,6 +8990,11 @@
             "email": "hello@kinningparkcomplex.org",
             "logo": "KinningParkComplex.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.287194,
+            "latitude": 55.850572,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -8629,6 +9029,11 @@
             "email": "info@lamhrecycle.co.uk",
             "logo": "LAMHrecycling.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.966937,
+            "latitude": 55.778697,
+            "admin_district": "North Lanarkshire"
           }
         },
         "categories": [
@@ -8665,6 +9070,11 @@
             "email": "csc@linkhaltd.co.uk",
             "logo": "LINKGroup.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.24919,
+            "latitude": 55.927321,
+            "admin_district": "City of Edinburgh"
           }
         },
         "categories": [
@@ -8699,6 +9109,11 @@
             "email": "info@luma-it.com",
             "logo": "LUMAIT.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.22233,
+            "latitude": 55.768227,
+            "admin_district": "South Lanarkshire"
           }
         },
         "categories": [
@@ -8734,6 +9149,11 @@
             "email": "magpie@avashire.org.uk",
             "logo": "Magpiereuse.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.48593,
+            "latitude": 57.056884,
+            "admin_district": "Aberdeenshire"
           }
         },
         "categories": [
@@ -8773,6 +9193,11 @@
             "email": "makedogrow@gmail.com",
             "logo": "MakeDoAndGrow.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.313677,
+            "latitude": 55.86309,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -8810,6 +9235,11 @@
             "email": "admin.marc@btconnect.com",
             "logo": "MARC.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.057572,
+            "latitude": 55.892257,
+            "admin_district": "Midlothian"
           }
         },
         "categories": [
@@ -8851,6 +9281,11 @@
             "email": "info@miixer.org",
             "logo": "Miixer.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.513103,
+            "latitude": 56.001707,
+            "admin_district": "East Lothian"
           }
         },
         "categories": [
@@ -8892,6 +9327,11 @@
             "email": "moraywastebusters@btconnect.com",
             "logo": "MorayWasteBusters.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.621677,
+            "latitude": 57.624718,
+            "admin_district": "Moray"
           }
         },
         "categories": [
@@ -8935,6 +9375,11 @@
             "email": "enquiries@mict.co.uk",
             "logo": "Mull&IonaCommunityTrust.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -5.698747,
+            "latitude": 56.465958,
+            "admin_district": "Argyll and Bute"
           }
         },
         "categories": [
@@ -8977,6 +9422,11 @@
             "email": "admin@neilstontrust.co.uk",
             "logo": "NeilstonDevelopmentTrust.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.428862,
+            "latitude": 55.783996,
+            "admin_district": "East Renfrewshire"
           }
         },
         "categories": [
@@ -9012,6 +9462,11 @@
             "email": "info@networksofwellbeing.org",
             "logo": "NetworksofWellbeing.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.799332,
+            "latitude": 57.445205,
+            "admin_district": "Aberdeenshire"
           }
         },
         "categories": [
@@ -9047,6 +9502,11 @@
             "email": "furniture@newstarthighland.org",
             "logo": "NewStartHighland.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.243457,
+            "latitude": 57.487952,
+            "admin_district": "Highland"
           }
         },
         "categories": [
@@ -9087,6 +9547,11 @@
             "email": "info@opengates.scot",
             "logo": "OpenGates.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.257585,
+            "latitude": 55.876898,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -9157,6 +9622,11 @@
             "email": "manager@pushinfo.org",
             "logo": "PUSH.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.434732,
+            "latitude": 56.395744,
+            "admin_district": "Perth and Kinross"
           }
         },
         "categories": [
@@ -9198,6 +9668,11 @@
             "email": "enquiries@leap-project.co.uk",
             "logo": "REVOLVErecycle.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.147067,
+            "latitude": 55.81234,
+            "admin_district": "South Lanarkshire"
           }
         },
         "categories": [
@@ -9234,6 +9709,11 @@
             "email": "enquiries@ramh.org",
             "logo": "RAMH.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.447523,
+            "latitude": 55.847013,
+            "admin_district": "Renfrewshire"
           }
         },
         "categories": [
@@ -9274,6 +9754,11 @@
             "email": "info@reboot-forres.co.uk",
             "logo": "ReBOOT.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.6372,
+            "latitude": 57.60761,
+            "admin_district": "Moray"
           }
         },
         "categories": [
@@ -9309,6 +9794,11 @@
             "email": "recapcumbernauld@btconnect.com",
             "logo": "RECAP.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.966849,
+            "latitude": 55.974344,
+            "admin_district": "North Lanarkshire"
           }
         },
         "categories": [
@@ -9350,6 +9840,11 @@
             "email": "mail@recyclemobilitycentre.com",
             "logo": "RecycleMobilityCentre.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.423333,
+            "latitude": 55.908542,
+            "admin_district": "West Dunbartonshire"
           }
         },
         "categories": [
@@ -9385,6 +9880,11 @@
             "email": "recyclingfirstel@gmail.com",
             "logo": "RecyclingFirst.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.891417,
+            "latitude": 55.945521,
+            "admin_district": "East Lothian"
           }
         },
         "categories": [
@@ -9422,6 +9922,11 @@
             "email": "admin@recyke-a-bike.co.uk",
             "logo": "RecykeaBike.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.919183,
+            "latitude": 56.136364,
+            "admin_district": "Stirling"
           }
         },
         "categories": [
@@ -9458,7 +9963,8 @@
             "email": "repaircafeglasgow@gmail.com",
             "logo": "RepairCafeGlasgow.JPG",
             "listorder": 0
-          }
+          },
+          "postal_code_info": null
         },
         "categories": [
           "community engagement",
@@ -9496,6 +10002,11 @@
             "email": "info@sbsec.org.uk",
             "logo": "sbsec.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.642602,
+            "latitude": 55.571087,
+            "admin_district": "Scottish Borders"
           }
         },
         "categories": [
@@ -9530,6 +10041,11 @@
             "email": "enquiries@seascapeayr.co.uk",
             "logo": "Seascape.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.631632,
+            "latitude": 55.462,
+            "admin_district": "South Ayrshire"
           }
         },
         "categories": [
@@ -9569,6 +10085,11 @@
             "email": "referrals@shax.org.uk",
             "logo": "SHAX.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.591041,
+            "latitude": 55.050548,
+            "admin_district": "Dumfries and Galloway"
           }
         },
         "categories": [
@@ -9612,6 +10133,11 @@
             "email": "info@somebodycaresuk.org",
             "logo": "SomebodyCares.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.081993,
+            "latitude": 57.127896,
+            "admin_district": "Aberdeen City"
           }
         },
         "categories": [
@@ -9651,6 +10177,11 @@
             "email": "info@sosn.org.uk",
             "logo": "SOSN.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.915356,
+            "latitude": 56.116817,
+            "admin_district": "Stirling"
           }
         },
         "categories": [
@@ -9688,7 +10219,8 @@
             "email": "info@soulriders.org.uk",
             "logo": "SoulRiders.JPG",
             "listorder": 0
-          }
+          },
+          "postal_code_info": null
         },
         "categories": [
           "community engagement",
@@ -9723,6 +10255,11 @@
             "email": "administrator@starterpacks.org.uk",
             "logo": "StarterPacksGlasgow.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.313677,
+            "latitude": 55.86309,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -9763,6 +10300,11 @@
             "email": "europe@stellasvoice.org",
             "logo": "StellasVoice.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -1.837546,
+            "latitude": 57.512792,
+            "admin_district": "Aberdeenshire"
           }
         },
         "categories": [
@@ -9803,6 +10345,11 @@
             "email": "info@reuseshop.org.uk",
             "logo": "StranraerFurnitureProject.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -5.013713,
+            "latitude": 54.897722,
+            "admin_district": "Dumfries and Galloway"
           }
         },
         "categories": [
@@ -9842,6 +10389,11 @@
             "email": "board@sustainingdunbar.org",
             "logo": "SustainingDunbar.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.513988,
+            "latitude": 56.000751,
+            "admin_district": "East Lothian"
           }
         },
         "categories": [
@@ -9877,7 +10429,8 @@
             "email": "info@thefurniturelodge.co.uk",
             "logo": "TheFurnitureLodge.JPG",
             "listorder": 0
-          }
+          },
+          "postal_code_info": null
         },
         "categories": [
           "community engagement",
@@ -9912,6 +10465,11 @@
             "email": "admin@thepianoprojectcic.co.uk",
             "logo": "ThePianoProject.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.284533,
+            "latitude": 55.828637,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -9947,6 +10505,11 @@
             "email": "admin@transformcd.org",
             "logo": "TransformDundee.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.988086,
+            "latitude": 56.462828,
+            "admin_district": "Dundee City"
           }
         },
         "categories": [
@@ -9985,6 +10548,11 @@
             "email": "admin@trustinfife.co.uk",
             "logo": "TrustInFife.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.208313,
+            "latitude": 56.128606,
+            "admin_district": "Fife"
           }
         },
         "categories": [
@@ -10023,7 +10591,8 @@
             "email": "info@upkeepglasgow.org.uk",
             "logo": "UpkeepShettleston.JPG",
             "listorder": 0
-          }
+          },
+          "postal_code_info": null
         },
         "categories": [
           "community engagement",
@@ -10059,6 +10628,11 @@
             "email": "warehouse.strathcarron@gmail.com",
             "logo": "Strathcarronhospice.jpg",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.786713,
+            "latitude": 56.011277,
+            "admin_district": "Falkirk"
           }
         },
         "categories": [
@@ -10098,7 +10672,8 @@
             "email": "info@inveruriemensshed.co.uk",
             "logo": "InverurieMensShed.jpg",
             "listorder": 0
-          }
+          },
+          "postal_code_info": null
         },
         "categories": [
           "community engagement",
@@ -10135,6 +10710,11 @@
             "email": "administrator@starterpacks.org.uk",
             "logo": "StarterPacksGlasgow.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.313072,
+            "latitude": 55.863138,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -10173,6 +10753,11 @@
             "email": "admin@employabilityorkney.co.uk",
             "logo": "EmployabilityOrkney.jpg",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.96313,
+            "latitude": 58.9805,
+            "admin_district": "Orkney Islands"
           }
         },
         "categories": [
@@ -10214,6 +10799,11 @@
             "email": "trev@traderightinternational.com",
             "logo": "redeem.jpg",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.754364,
+            "latitude": 55.942453,
+            "admin_district": "Inverclyde"
           }
         },
         "categories": [
@@ -10249,6 +10839,11 @@
             "email": "glasgowsouth@bikeforgood.org.uk",
             "logo": "BikeforGood.JPG",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.265353,
+            "latitude": 55.834079,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -10284,6 +10879,11 @@
             "email": "info@ewfc.org.uk",
             "logo": "EWFC.png",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.255832,
+            "latitude": 55.85746,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -10318,6 +10918,11 @@
             "email": "mailto:debbie.muir@alltogetheredinburgh.org.uk",
             "logo": "AllTogetherEdinburgh.jpg",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.172608,
+            "latitude": 55.969173,
+            "admin_district": "City of Edinburgh"
           }
         },
         "categories": [
@@ -10358,6 +10963,11 @@
             "email": "#",
             "logo": "BuddingEngineers.jpg",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.060498,
+            "latitude": 58.448609,
+            "admin_district": "Highland"
           }
         },
         "categories": [
@@ -10392,6 +11002,11 @@
             "email": "hello@communitygiftexchange.com",
             "logo": "CommunityGiftExchange.png",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.632087,
+            "latitude": 55.460273,
+            "admin_district": "South Ayrshire"
           }
         },
         "categories": [
@@ -10436,6 +11051,11 @@
             "email": "shona@morayreachout.org.uk",
             "logo": "MorayReachOut.jpg",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.954086,
+            "latitude": 57.671618,
+            "admin_district": "Moray"
           }
         },
         "categories": [
@@ -10474,6 +11094,11 @@
             "email": "info@grassmarket.org",
             "logo": "grassmarket.png",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.193286,
+            "latitude": 55.947616,
+            "admin_district": "City of Edinburgh"
           }
         },
         "categories": [
@@ -10510,6 +11135,11 @@
             "email": "sustainablekirriemuir@gmail.com",
             "logo": "sustainablekirriemuir.png",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -2.998763,
+            "latitude": 56.674676,
+            "admin_district": "Angus"
           }
         },
         "categories": [
@@ -10544,6 +11174,11 @@
             "email": "perthadmin@thebikestation.org.uk",
             "logo": "TheBikeStationPerth.png",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.438046,
+            "latitude": 56.396865,
+            "admin_district": "Perth and Kinross"
           }
         },
         "categories": [
@@ -10579,6 +11214,11 @@
             "email": "shop@hsclacks.co.uk",
             "logo": "homestartclacks.png",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.782862,
+            "latitude": 56.119806,
+            "admin_district": "Clackmannanshire"
           }
         },
         "categories": [
@@ -10617,6 +11257,11 @@
             "email": "nestcreativespaces@gmail.com",
             "logo": "nestcreativespaces.png",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -3.335747,
+            "latitude": 56.59174,
+            "admin_district": "Perth and Kinross"
           }
         },
         "categories": [
@@ -10654,6 +11299,11 @@
             "email": "hello@glasgowtoollibrary.com",
             "logo": "glasgowtoollibrary.jpeg",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.259199,
+            "latitude": 55.871099,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -10690,6 +11340,11 @@
             "email": "hello@musicbroth.org",
             "logo": "musicbroth.png",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -4.253484,
+            "latitude": 55.8384,
+            "admin_district": "Glasgow City"
           }
         },
         "categories": [
@@ -10724,6 +11379,11 @@
             "email": "info@fedup.org.uk",
             "logo": "fedup.jpg",
             "listorder": 0
+          },
+          "postal_code_info": {
+            "longitude": -5.022869,
+            "latitude": 54.904451,
+            "admin_district": "Dumfries and Galloway"
           }
         },
         "categories": [

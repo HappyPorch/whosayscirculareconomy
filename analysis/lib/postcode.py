@@ -10,7 +10,8 @@ def lookup_coords(postcode):
         if "result" in jsonResponse:
             postcode_coords = {
                 "longitude": jsonResponse["result"]["longitude"],
-                "latitude": jsonResponse["result"]["latitude"]
+                "latitude": jsonResponse["result"]["latitude"],
+                "admin_district": jsonResponse["result"]["admin_district"]
             }
             return postcode_coords
         else:

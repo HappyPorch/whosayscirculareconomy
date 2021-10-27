@@ -70,9 +70,12 @@ function filteredDisplay() {
     }
 
     clearTable();
-    if (groupByField) {
+    if (groupByField == "location") {
         groupedResults = [];
-        group = _.groupBy(results,groupByField);
+        group = _.groupBy(results,function (r) {
+            var loc = r["org"]["location"]["postal_code_info"]
+            return loc ? loc["admin_district"] : "unknown";
+        });
         _.each(group, function(v,k,l) {
             var f = filter_found(v, filterByCount).length;
             var c = v.length;
@@ -91,7 +94,7 @@ function filteredDisplay() {
         showHead("group");
         let rowTemplate = {'html':$('#rowTemplate_Group').html()};
         $('#resultsTable tbody').json2html(groupedResults, rowTemplate);
-        showChart(groupedResults);
+        //showChart(groupedResults);
     } else {
         ungroupedDisplay(filter_found(results, filterByCount));
     }
