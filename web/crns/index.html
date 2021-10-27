@@ -67,6 +67,48 @@
                 
             </div>
             <div class="tab-pane fade" id="tablePanel" role="tabpanel" aria-labelledby="tablePanel-tab">
+                
+
+                <h5>Filter and/or group results</h5>
+                <select id="filterGroup" class="runFilter form-select">
+                    <option value="">All Sites</option>
+                </select>
+                <select id="filterByCount" class="runFilter form-select my-1">
+                    <option value="">All</option>
+                    <option value="5">At least 5 mentions</option>
+                    <option value="9">At least 9 mentions</option>
+                </select>
+                <select id="filterByCategory" class="runFilter form-select">
+                    <option value=""></option>
+                </select>
+
+                <div class="row">
+                    <div class="col">
+                        <script id="rowTemplate_Group" type="text/template">
+                            <tr><td>${group}</td><td class="text-nowrap">${count_found}<td class="text-nowrap">${percent_found}%</td><td class="text-nowrap">${count_notfound}<td class="text-nowrap">${percent_notfound}%</td><td>${total}</td></tr>
+                        </script>
+                        <script id="rowTemplate" type="text/template">
+                            <tr><td>${domain}</td><td>${summary.results_count}</td></tr>
+                        </script>
+                        <table id="resultsTable" class="table table-sm filtered_table">
+                            <thead>
+                                <tr class="text-nowrap">
+                                    <th data-sort="string" id="col1_head"></th>
+                                    <th data-sort="int" id="col2_head" colspan="2"></th>
+                                    <th data-sort="int" id="col3_head" colspan="2"></th>
+                                    <th data-sort="int" id="col4_head"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <div id="pieChart"></div>
+                    </div>
+                  </div>
+            
             </div> 
         </div> 
     </div>
